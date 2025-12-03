@@ -8,7 +8,7 @@ It supports full-load ingestion, daily incremental updates, Bronze–Silver–Go
 # 🧱 Architecture Overview
 
 ## Bronze → Silver → Gold Architecture  
-**Path:** ![Medallion Architecture](architecture/Medallion%20Architecture.png)
+![Medallion Architecture](architecture/Medallion%20Architecture.png)
 
 
 ---
@@ -52,13 +52,13 @@ This project uses a **Databricks Workflow** to orchestrate the entire ETL pipeli
 It automates ingestion, cleaning, modeling, and merging of incremental daily files.
 
 ## Pipeline Image  
-**Path:** `architecture/Data%20Model.png`
+`architecture/Data%20Model.png`
 
 ---
 
 ## Workflow Stages
 
-**Path:** `architecture/Workflow%20Diagram.jpg`
+`architecture/Workflow%20Diagram.jpg`
 
 ### 1. Bronze Stage
 - Raw ingestion from S3  
@@ -94,7 +94,7 @@ It automates ingestion, cleaning, modeling, and merging of incremental daily fil
 
 # 🧩 Data Model (ER Diagram)
  
-**Path:** `architecture/Data%20Model.png`
+`architecture/Data%20Model.png`
 
 Includes:
 - fact_orders  
