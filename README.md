@@ -7,9 +7,9 @@ It supports full-load ingestion, daily incremental updates, Bronze–Silver–Go
 
 # 🧱 Architecture Overview
 
-## Bronze → Silver → Gold Architecture
-*(Insert architecture diagram here)*  
-**Path:** `architecture/bronze_silver_gold_diagram.png`
+## Bronze → Silver → Gold Architecture  
+**Path:** ![Medallion Architecture](architecture/Medallion Architecture.png)
+
 
 ---
 
@@ -21,10 +21,6 @@ The pipeline uses four key datasets:
 - products  
 - gross_price  
 - orders (full load + incremental)
-
-### Sample Raw Data Preview  
-*(Insert screenshot of raw CSV or Databricks preview)*  
-**Path:** `sample-data/raw_preview.png`
 
 ---
 
@@ -55,13 +51,14 @@ The pipeline uses four key datasets:
 This project uses a **Databricks Workflow** to orchestrate the entire ETL pipeline.  
 It automates ingestion, cleaning, modeling, and merging of incremental daily files.
 
-## Workflow Diagram  
-*(Insert workflow diagram image)*  
-**Path:** `architecture/workflow_diagram.png`
+## Pipeline Image  
+**Path:** `architecture/Data Model.png`
 
 ---
 
 ## Workflow Stages
+
+**Path:** `architecture/Workflow Diagram.jpg`
 
 ### 1. Bronze Stage
 - Raw ingestion from S3  
@@ -96,9 +93,8 @@ It automates ingestion, cleaning, modeling, and merging of incremental daily fil
 ---
 
 # 🧩 Data Model (ER Diagram)
-
-*(Insert ER diagram here)*  
-**Path:** `architecture/er_diagram.png`
+ 
+**Path:** `architecture/Data Model.png`
 
 Includes:
 - fact_orders  
@@ -120,9 +116,6 @@ The pipeline:
 - Cleans them in Silver  
 - Merges them in Gold using UPSERT  
 
-*(Insert incremental load preview)*  
-**Path:** `sample-data/incremental_preview.png`
-
 ---
 
 # 🧪 Technical Results
@@ -137,9 +130,6 @@ The pipeline:
 - ~35% faster transformation after SQL optimization  
 - 100% successful workflow runs  
 - UPSERT resolved ~6% mismatched rows  
-
-*(Insert screenshot of result cards or metrics)*  
-**Path:** `architecture/data_quality_metrics.png`
 
 ---
 
@@ -166,7 +156,7 @@ The pipeline:
 
 ### 1. Upload data to S3
 
-s3://your-bucket-name/raw/
+s3://child-company-sportbar-divjyot/
 
 ### 2. Import Databricks Notebooks
 Run in order:
@@ -182,11 +172,6 @@ Run in order:
 - Check row counts  
 - Validate joins  
 - View dashboards  
-
----
-
-# 📄 License
-MIT / Apache 2.0
 
 ---
 
