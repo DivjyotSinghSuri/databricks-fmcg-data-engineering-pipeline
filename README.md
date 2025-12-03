@@ -38,11 +38,10 @@ The pipeline uses four key datasets:
 
 # 📂 Repository Structure
 
-/architecture → ERD, workflow diagram, BSG architecture
-/notebooks → SQL notebooks for Bronze, Silver, Gold
-/sample-data → Sample CSVs (5–10 rows only)
-/pipeline → Databricks workflow JSON
-/appendix → Certificates + code snippets
+- /architecture → ERD, workflow diagram, BSG architecture
+- /notebooks → SQL notebooks for Bronze, Silver, Gold
+- /sample-data → Sample CSVs (5–10 rows only)
+- /pipeline → Databricks workflow JSON
 
 ---
 
