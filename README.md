@@ -43,19 +43,9 @@ The pipeline uses four key datasets:
 
 ---
 
-# 🔁 Pipeline Workflow (ETL Orchestration)
-
-This project uses a **Databricks Workflow** to orchestrate the entire ETL pipeline.  
-It automates ingestion, cleaning, modeling, and merging of incremental daily files.
-
-## Pipeline Image  
-`architecture/Data%20Model.png`
-
----
-
 ## Workflow Stages
 
-`architecture/Workflow%20Diagram.jpg`
+![Workflow](architecture/Workflow%20Diagram.jpg)
 
 ### 1. Bronze Stage
 - Raw ingestion from S3  
@@ -84,13 +74,13 @@ It automates ingestion, cleaning, modeling, and merging of incremental daily fil
 - Sends **email alerts** on failure  
 - Fully automated incremental ETL
 
-`architecture/Pipeline.png`
+![Automated Pipeline](architecture/Data%20Model.png)
 
 ---
 
 # 🧩 Data Model (ER Diagram)
  
-`architecture/Data%20Model.png`
+![Data Model](architecture/Data%20Model.png)
 
 Includes:
 - fact_orders  
@@ -127,7 +117,7 @@ The pipeline:
 
 # 📊 Dashboards
 
- `architecture/dashboardimage.png`
+ ![Dashboard](architecture/dashboardimage.png)
 
 ---
 
