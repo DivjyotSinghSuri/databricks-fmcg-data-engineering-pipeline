@@ -40,8 +40,6 @@ The pipeline uses four key datasets:
 
 - /architecture → ERD, workflow diagram, BSG architecture
 - /notebooks → SQL notebooks for Bronze, Silver, Gold
-- /sample-data → Sample CSVs (5–10 rows only)
-- /pipeline → Databricks workflow JSON
 
 ---
 
@@ -86,8 +84,7 @@ It automates ingestion, cleaning, modeling, and merging of incremental daily fil
 - Sends **email alerts** on failure  
 - Fully automated incremental ETL
 
-*(Insert workflow schedule screenshot)*  
-**Path:** `architecture/workflow_schedule.png`
+`architecture/Pipeline.png`
 
 ---
 
@@ -104,10 +101,6 @@ Includes:
 ---
 
 # 🔁 Incremental Load Processing
-
-Daily incremental files:
-- `orders_2025_12_30.csv`  
-- `orders_2025_12_31.csv`
 
 The pipeline:
 - Detects new files  
@@ -132,10 +125,9 @@ The pipeline:
 
 ---
 
-# 📊 Dashboards (Optional)
+# 📊 Dashboards
 
-*(Insert dashboard screenshot showing Gold-layer results)*  
-**Path:** `architecture/dashboard_overview.png`
+ `architecture/dashboardimage.png`
 
 ---
 
@@ -148,29 +140,6 @@ The pipeline:
 - UPSERT logic  
 - Workflow automation  
 - Spark SQL optimization  
-
----
-
-# 🛠️ How to Run the Pipeline
-
-### 1. Upload data to S3
-
-s3://child-company-sportbar-divjyot/
-
-### 2. Import Databricks Notebooks
-Run in order:
-1. Bronze  
-2. Silver  
-3. Gold  
-
-### 3. Import Workflow JSON
-- Set schedule to 11 PM  
-- Enable email alerts  
-
-### 4. Validate Gold tables
-- Check row counts  
-- Validate joins  
-- View dashboards  
 
 ---
 
