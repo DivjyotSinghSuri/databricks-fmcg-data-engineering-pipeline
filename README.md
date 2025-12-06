@@ -74,7 +74,7 @@ The pipeline uses four key datasets:
 - Sends **email alerts** on failure  
 - Fully automated incremental ETL
 
-![Automated Pipeline](architecture/Data%20Model.png)
+![Automated Pipeline](architecture/Pipeline.png)
 
 ---
 
